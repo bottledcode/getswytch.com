@@ -1,0 +1,40 @@
+/* Override theme fonts with Source Sans Pro */
+body,
+.title,
+.subtitle,
+.hero-body .title,
+.hero-body .subtitle,
+.landing-caption .title,
+.landing-caption .subtitle,
+.section-title,
+.button,
+.navbar-item,
+.card-title h4,
+.card-text p,
+.icon-box-title,
+.icon-box-text,
+.footer,
+input,
+textarea {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+/* Headlines - Semi-Bold (600) */
+.title,
+.hero-body .title,
+.landing-caption .title,
+.section-title,
+.card-title h4,
+.icon-box-title {
+  font-weight: 600 !important;
+}
+
+/* Body text - Medium (500) */
+.subtitle,
+.hero-body .subtitle,
+.landing-caption .subtitle,
+.card-text p,
+.icon-box-text,
+p {
+  font-weight: 500 !important;
+}

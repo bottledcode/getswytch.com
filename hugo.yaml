@@ -1,0 +1,81 @@
+baseURL: https://getswytch.com/
+languageCode: en-us
+title: Swytch - Redis-compatible Cache with Full Durability
+
+module:
+  imports:
+    - path: github.com/StefMa/hugo-fresh
+
+disableKinds:
+- taxonomy
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  openGraph: true
+  description: Redis-compatible cache with full durability. No throughput penalty. Drop-in replacement. Pay only for what you use.
+
+  navbarlogo:
+    image: logos/swytch.svg
+    link: /
+    width: 40
+    height: 34
+
+  font:
+    name: "Source Sans Pro"
+    sizes: [300, 400, 600]
+
+  hero:
+    title: Redis-compatible cache with full durability.
+    subtitle: No throughput penalty. Drop-in replacement. Pay only for what you use.
+    buttontext: Request Early Access
+    buttonlink: "#section5"
+    image: illustrations/database.jpg
+
+  navbar:
+  - title: Features
+    url: "#section1"
+  - title: Self-Hosted
+    url: "https://docs.getswytch.com"
+  - title: Early Access
+    url: "#section5"
+    button: true
+
+  section1:
+    title: Why Swytch?
+    subtitle: Everything you need from a cache, nothing you don't
+    tiles:
+    - title: Protocol Compatible
+      icon: api
+      text: Redis & Memcached compatible. Use your existing client libraries and code.
+    - title: Fully Managed
+      icon: cloud
+      text: Just swap your connection string. No servers to provision, no clusters to manage.
+    - title: Full Durability
+      icon: synchronization
+      text: No AOF/RDB tradeoffs. Your data is always protected without performance penalty.
+
+  section5:
+    title: Request Early Access
+    subtitle: Be among the first to experience Redis caching without compromise
+    buttonText: Request Access
+
+  footer:
+    logo: swytch-white.svg
+    socialmediatitle: Follow Us
+    socialmedia:
+    - link: https://github.com/bottledcode
+      icon: github
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Features
+          link: "#section1"
+        - text: Self-Hosted
+          link: "https://docs.getswytch.com"
+        - text: Early Access
+          link: "#section5"
